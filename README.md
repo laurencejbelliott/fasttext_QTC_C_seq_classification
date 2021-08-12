@@ -1,1 +1,2 @@
 # fasttext QTC_C sequence HRSI situation classification
+Testing an off-the-shelf sequence classifier's performance for classifying the Human-Robot Spatial Interaction (HRSI) situation of QTC_C sequences generated from HRSI. To serve as a point of comparison with my HMM-based classifier developed for my MSc thesis "Qualitative  Probabilistic  Models  of  HRSI  for  Safe Situational Human-Aware Navigation".
