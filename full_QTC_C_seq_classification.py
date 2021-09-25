@@ -1,9 +1,9 @@
 import fasttext
-model = fasttext.train_supervised("hf_expert_full_qtc_seqs_fasttext.txt", epoch=40, lr=.1)
+model = fasttext.train_supervised("expert_full_qtc_seqs_fasttext.txt", epoch=40, lr=.1)
 print(model.labels)
 print(model.words, "\n")
 
-per_class_results = model.test_label('hf_study_full_qtc_seqs_fasttext.txt')
+per_class_results = model.test_label('study_full_qtc_seqs_fasttext.txt')
 # print(per_class_results)
 for label in per_class_results.keys():
     print(label, per_class_results[label])

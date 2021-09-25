@@ -9,8 +9,6 @@ per_class_results = model.test_label('hf_study_qtc_seqs_fasttext.txt')
 for label in per_class_results.keys():
     print(label, per_class_results[label])
 
-model.save_model("cv_model.bin")
-
 # def print_results(N, p, r):
 #     print("N\t" + str(N))
 #     print("P@{}\t{:.3f}".format(1, p))

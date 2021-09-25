@@ -7,6 +7,7 @@ if __name__ == "__main__":
     with open("controlled_lab_qtc_seqs.pickle", 'rb') as pickle_file:
         lab_seqs = pickle.load(pickle_file)
 
+
     # print(lab_seqs.keys())
     seqs = {"u": [], "pbl": [], "pbr": [], "pcl": [], "pcr": [], "rotl": [], "rotr": []}
 
@@ -49,7 +50,7 @@ if __name__ == "__main__":
 
     print(str_lab_seqs)
 
-    with open("hf_expert_full_qtc_seqs_fasttext.txt", "w") as expert_qtc_seqs_file:
+    with open("expert_full_qtc_seqs_fasttext.txt", "w") as expert_qtc_seqs_file:
         for key in str_lab_seqs.keys():
             expert_qtc_seqs_file.writelines(str_lab_seqs[key])
 
@@ -58,6 +59,7 @@ if __name__ == "__main__":
     with open("study_qtc_seqs.pickle", 'rb') as pickle_file:
         lab_seqs = pickle.load(pickle_file)
 
+    # print("Study QTC Seqs:", lab_seqs)
     # print(lab_seqs.keys())
     seqs = {"u": [], "pbl": [], "pbr": [], "pcl": [], "pcr": [], "rotl": [], "rotr": []}
 
@@ -100,7 +102,7 @@ if __name__ == "__main__":
 
     print(str_lab_seqs)
 
-    with open("hf_study_full_qtc_seqs_fasttext.txt", "w") as expert_qtc_seqs_file:
+    with open("study_full_qtc_seqs_fasttext.txt", "w") as expert_qtc_seqs_file:
         for key in str_lab_seqs.keys():
             expert_qtc_seqs_file.writelines(str_lab_seqs[key])
 
